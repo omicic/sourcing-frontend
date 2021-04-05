@@ -13,6 +13,11 @@ sans-serif;
 $transition: .5s ease;
 $boxShadow: 0 0 20px gray;
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 body {
     font-family: $fontFamily;
     font-size: $fontSize;
@@ -21,18 +26,54 @@ body {
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(img/header3.jpg);
-    height: 70vh;
+    height: 40vh;
 
 }
 
-nav .nav-link {
-    color: $white;
-    margin-left: 20px;
-    text-transform: uppercase;
-    transition: $transition;
+nav {
+    .nav-link {
+        color: $white;
+        margin-left: 20px;
+        text-transform: uppercase;
+        transition: $transition;
 
-    &:hover {
-        color: $secondaryColor;
+        &:hover {
+            color: $secondaryColor;
+        }
+    }
+}
+
+/***zaglavlje***/
+#zaglavlje {
+    background: $primaryColor;
+    height: 30vh;
+    position: relative;
+    top: -100px;
+
+    .row {
+        position: relative;
+        top: -100px;
+
+        h1 {
+            font-size: 5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-shadow: 0px 0px 15px $secondaryColor;
+        }
+
+        p {
+            padding: 10px 0 20px 0;
+        }
+
+
+        .element {
+            text-transform: uppercase;
+            color: $secondaryColor;
+            font-weight: 600;
+            font-size: 1.7rem;
+            padding-bottom: 20px;
+
+        }
     }
 
 }
