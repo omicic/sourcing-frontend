@@ -3,6 +3,12 @@
 /***********
 mixin
 ***********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -73,9 +79,6 @@ nav .nav-link:hover {
 }
 
 /***about***/
-#program {
-  margin: -70px;
-}
 #program .prvi article, #program .treci article, #program .drugi article {
   display: flex;
   justify-content: flex-start;
@@ -143,9 +146,12 @@ nav .nav-link:hover {
 
 #about {
   background: url(img/bg3.jpg);
+  background-position: center;
+  background-size: cover;
   margin-top: 200px;
 }
 #about img {
+  width: 100%;
   padding: 20px 0;
   margin-bottom: 20px;
 }
