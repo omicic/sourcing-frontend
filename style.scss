@@ -42,8 +42,12 @@ h4,
 h5,
 h6 {
     margin-bottom: 0;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.2;
+}
+
+ul {
+    list-style: none;
 }
 
 header {
@@ -192,9 +196,6 @@ nav {
         margin-bottom: 20px;
     }
 
-
-
-
     .row:nth-child(1) {
         .owl-carousel {
             background: $secondaryColor;
@@ -264,6 +265,43 @@ nav {
             text-align: center;
         }
     }
+}
+
+/***footer***/
+footer {
+    background: url(img/footer.jpg);
+    background-size: cover;
+    background-position: center;
 
 
+
+    li,
+    i {
+        font-size: .9rem;
+    }
+
+    ul {
+        padding: 10px 0 0 0;
+        line-height: 2rem;
+    }
+
+    .prva {
+        padding-left: 50px;
+    }
+
+    .druga {
+        padding-left: 50px;
+    }
+
+    .col-md-5 {
+        padding-left: 150px;
+
+
+        i {
+            font-size: 2rem;
+            margin-left: 10px;
+            padding-top: 10px;
+        }
+
+    }
 }

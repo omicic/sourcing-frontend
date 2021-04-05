@@ -21,8 +21,12 @@ h4,
 h5,
 h6 {
   margin-bottom: 0;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.2;
+}
+
+ul {
+  list-style: none;
 }
 
 header {
@@ -200,4 +204,33 @@ nav .nav-link:hover {
   font-weight: 700;
   letter-spacing: 1rem;
   text-align: center;
+}
+
+/***footer***/
+footer {
+  background: url(img/footer.jpg);
+  background-size: cover;
+  background-position: center;
+}
+footer li,
+footer i {
+  font-size: 0.9rem;
+}
+footer ul {
+  padding: 10px 0 0 0;
+  line-height: 2rem;
+}
+footer .prva {
+  padding-left: 50px;
+}
+footer .druga {
+  padding-left: 50px;
+}
+footer .col-md-5 {
+  padding-left: 150px;
+}
+footer .col-md-5 i {
+  font-size: 2rem;
+  margin-left: 10px;
+  padding-top: 10px;
 }/*# sourceMappingURL=style.css.map */
