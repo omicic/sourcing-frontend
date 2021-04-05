@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap");
 /*rgb(238, 102, 108)*/
+/***********
+mixin
+***********/
 .container {
   width: 80%;
   margin: 0 auto;
@@ -9,6 +12,17 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 header {
@@ -29,7 +43,7 @@ nav .nav-link:hover {
 /***zaglavlje***/
 #zaglavlje {
   background: #25235b;
-  height: 30vh;
+  height: 35vh;
   position: relative;
   top: -100px;
 }
@@ -52,4 +66,73 @@ nav .nav-link:hover {
   font-weight: 600;
   font-size: 1.7rem;
   padding-bottom: 20px;
+}
+
+/***about***/
+#about {
+  margin: -70px;
+}
+#about .prvi article, #about .treci article, #about .drugi article {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 35px;
+  margin: 0px 15px 30px 0px;
+}
+#about .prvi article h3, #about .treci article h3, #about .drugi article h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+#about .prvi article p, #about .treci article p, #about .drugi article p {
+  padding: 10px 0;
+}
+#about .prvi article:nth-child(1), #about .treci article:nth-child(1), #about .drugi article:nth-child(1) {
+  background: #ee666c;
+}
+#about .prvi article:nth-child(1) p, #about .treci article:nth-child(1) p, #about .drugi article:nth-child(1) p,
+#about .prvi article:nth-child(1) h3,
+#about .treci article:nth-child(1) h3,
+#about .drugi article:nth-child(1) h3 {
+  color: #fff;
+}
+#about .prvi article:nth-child(2), #about .treci article:nth-child(2), #about .drugi article:nth-child(2) {
+  background: #f3f3f2;
+}
+#about .prvi article:nth-child(2) p, #about .treci article:nth-child(2) p, #about .drugi article:nth-child(2) p,
+#about .prvi article:nth-child(2) h3,
+#about .treci article:nth-child(2) h3,
+#about .drugi article:nth-child(2) h3 {
+  color: #25235b;
+}
+#about .drugi {
+  top: 60px;
+}
+#about .drugi article:nth-child(1) {
+  background: #25235b;
+}
+#about .drugi article:nth-child(2) {
+  background: #ee666c;
+}
+#about .drugi article:nth-child(2) p,
+#about .drugi article:nth-child(2) h3 {
+  color: #fff;
+}
+#about .treci {
+  top: 120px;
+}
+#about .treci article:nth-child(1) {
+  background: #f3f3f2;
+}
+#about .treci article:nth-child(1) p,
+#about .treci article:nth-child(1) h3 {
+  color: #25235b;
+}
+#about .treci article:nth-child(2) {
+  background: #25235b;
+}
+#about .treci article:nth-child(2) p,
+#about .treci article:nth-child(2) h3 {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

@@ -13,6 +13,17 @@ sans-serif;
 $transition: .5s ease;
 $boxShadow: 0 0 20px gray;
 
+/***********
+mixin
+***********/
+@mixin flex($justify, $align, $direction, $wrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -22,6 +33,17 @@ body {
     font-family: $fontFamily;
     font-size: $fontSize;
     letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 header {
@@ -46,7 +68,7 @@ nav {
 /***zaglavlje***/
 #zaglavlje {
     background: $primaryColor;
-    height: 30vh;
+    height: 35vh;
     position: relative;
     top: -100px;
 
@@ -75,5 +97,86 @@ nav {
 
         }
     }
+}
 
+/***about***/
+#about {
+    margin: -70px;
+
+    .prvi {
+
+        article {
+            @include flex(flex-start, center, row, wrap);
+            padding: 35px;
+            margin: 0px 15px 30px 0px;
+
+            h3 {
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+
+            p {
+                padding: 10px 0;
+            }
+        }
+
+        article:nth-child(1) {
+            background: $secondaryColor;
+
+            p,
+            h3 {
+                color: $white;
+            }
+        }
+
+        article:nth-child(2) {
+            background: $lightGray;
+
+            p,
+            h3 {
+                color: $primaryColor;
+            }
+        }
+    }
+
+    .drugi {
+        @extend .prvi;
+        top: 60px;
+
+        article:nth-child(1) {
+            background: $primaryColor;
+        }
+
+        article:nth-child(2) {
+            background: $secondaryColor;
+
+            p,
+            h3 {
+                color: $white;
+            }
+        }
+    }
+
+    .treci {
+        @extend .prvi;
+        top: 120px;
+
+        article:nth-child(1) {
+            background: $lightGray;
+
+            p,
+            h3 {
+                color: $primaryColor;
+            }
+        }
+
+        article:nth-child(2) {
+            background: $primaryColor;
+
+            p,
+            h3 {
+                color: $white;
+            }
+        }
+    }
 }
