@@ -69,10 +69,10 @@ nav .nav-link:hover {
 }
 
 /***about***/
-#about {
+#program {
   margin: -70px;
 }
-#about .prvi article, #about .treci article, #about .drugi article {
+#program .prvi article, #program .treci article, #program .drugi article {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -81,58 +81,111 @@ nav .nav-link:hover {
   padding: 35px;
   margin: 0px 15px 30px 0px;
 }
-#about .prvi article h3, #about .treci article h3, #about .drugi article h3 {
+#program .prvi article h3, #program .treci article h3, #program .drugi article h3 {
   text-transform: uppercase;
   font-weight: 600;
 }
-#about .prvi article p, #about .treci article p, #about .drugi article p {
+#program .prvi article p, #program .treci article p, #program .drugi article p {
   padding: 10px 0;
 }
-#about .prvi article:nth-child(1), #about .treci article:nth-child(1), #about .drugi article:nth-child(1) {
+#program .prvi article:nth-child(1), #program .treci article:nth-child(1), #program .drugi article:nth-child(1) {
   background: #ee666c;
 }
-#about .prvi article:nth-child(1) p, #about .treci article:nth-child(1) p, #about .drugi article:nth-child(1) p,
-#about .prvi article:nth-child(1) h3,
-#about .treci article:nth-child(1) h3,
-#about .drugi article:nth-child(1) h3 {
+#program .prvi article:nth-child(1) p, #program .treci article:nth-child(1) p, #program .drugi article:nth-child(1) p,
+#program .prvi article:nth-child(1) h3,
+#program .treci article:nth-child(1) h3,
+#program .drugi article:nth-child(1) h3 {
   color: #fff;
 }
-#about .prvi article:nth-child(2), #about .treci article:nth-child(2), #about .drugi article:nth-child(2) {
+#program .prvi article:nth-child(2), #program .treci article:nth-child(2), #program .drugi article:nth-child(2) {
   background: #f3f3f2;
 }
-#about .prvi article:nth-child(2) p, #about .treci article:nth-child(2) p, #about .drugi article:nth-child(2) p,
-#about .prvi article:nth-child(2) h3,
-#about .treci article:nth-child(2) h3,
-#about .drugi article:nth-child(2) h3 {
+#program .prvi article:nth-child(2) p, #program .treci article:nth-child(2) p, #program .drugi article:nth-child(2) p,
+#program .prvi article:nth-child(2) h3,
+#program .treci article:nth-child(2) h3,
+#program .drugi article:nth-child(2) h3 {
   color: #25235b;
 }
-#about .drugi {
+#program .drugi {
   top: 60px;
 }
-#about .drugi article:nth-child(1) {
+#program .drugi article:nth-child(1) {
   background: #25235b;
 }
-#about .drugi article:nth-child(2) {
+#program .drugi article:nth-child(2) {
   background: #ee666c;
 }
-#about .drugi article:nth-child(2) p,
-#about .drugi article:nth-child(2) h3 {
+#program .drugi article:nth-child(2) p,
+#program .drugi article:nth-child(2) h3 {
   color: #fff;
 }
-#about .treci {
+#program .treci {
   top: 120px;
 }
-#about .treci article:nth-child(1) {
+#program .treci article:nth-child(1) {
   background: #f3f3f2;
 }
-#about .treci article:nth-child(1) p,
-#about .treci article:nth-child(1) h3 {
+#program .treci article:nth-child(1) p,
+#program .treci article:nth-child(1) h3 {
   color: #25235b;
 }
-#about .treci article:nth-child(2) {
+#program .treci article:nth-child(2) {
   background: #25235b;
 }
-#about .treci article:nth-child(2) p,
-#about .treci article:nth-child(2) h3 {
+#program .treci article:nth-child(2) p,
+#program .treci article:nth-child(2) h3 {
   color: #fff;
+}
+
+#about {
+  background: url(img/bg3.jpg);
+  margin-top: 200px;
+}
+#about img {
+  padding: 20px 0;
+}
+#about .owl-carousel {
+  background: #ee666c;
+  margin-top: 40px;
+}
+#about .owl-carousel .owl-next,
+#about .owl-carousel .owl-prev {
+  position: absolute;
+  top: 40%;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+}
+#about .owl-carousel .owl-next {
+  right: 15px;
+}
+#about .owl-carousel .owl-prev {
+  left: 15px;
+}
+#about .owl-carousel .item {
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+#about .owl-carousel .owl-theme .owl-dots .owl-dot span {
+  width: 40px;
+  height: 3px;
+  border-radius: 0px;
+}
+#about .owl-carousel .owl-dots {
+  text-align: center;
+  padding-bottom: 20px;
+}
+#about .owl-carousel .owl-dots button.owl-dot {
+  width: 20px;
+  height: 2px;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+#about .owl-carousel .owl-dots button.owl-dot.active {
+  background-color: #fff;
+}
+#about .owl-carousel .owl-dots button.owl-dot:focus {
+  outline: none;
 }/*# sourceMappingURL=style.css.map */
