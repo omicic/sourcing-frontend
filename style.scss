@@ -65,6 +65,19 @@ hr {
 
 }
 
+button {
+    padding: 10px 20px;
+    border: none;
+    background: $secondaryColor;
+    text-transform: uppercase;
+    transition: $transition;
+
+    &:hover {
+        color: $lightGray;
+        background: $primaryColor;
+    }
+}
+
 .navbar-toggler {
 
     background-color: rgb(80, 80, 79);
@@ -100,28 +113,19 @@ header {
                     color: $secondaryColor;
                 }
             }
-
         }
+    }
 
-        /*        .navbar-toggler-icon {
-            width: 100%;
-            float: left;
-            height: 2px;
-            background-color: #fff;
-            margin-bottom: 5px;
-        } */
+    /***naslov***/
+    .naslov {
 
-        /***naslov***/
-        .naslov {
+        padding-top: 60px;
 
-            padding-top: 60px;
-
-            h1 {
-                background: $secondaryColor;
-                opacity: .8;
-                padding: 10px 20px;
-                display: inline;
-            }
+        h1 {
+            background: $secondaryColor;
+            opacity: .8;
+            padding: 10px 20px;
+            display: inline;
         }
     }
 
@@ -364,7 +368,8 @@ footer {
 }
 
 /***blog***/
-.blog {
+.blog,
+.education {
     padding: 40px;
 
     .card {

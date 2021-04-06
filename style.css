@@ -43,6 +43,18 @@ hr {
   margin: 10px 0;
 }
 
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #ee666c;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+button:hover {
+  color: #f3f3f2;
+  background: #25235b;
+}
+
 .navbar-toggler {
   background-color: #50504f;
 }
@@ -50,17 +62,8 @@ hr {
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/header3.jpg);
   height: 50vh;
-  /***zaglavlje***/
-}
-header nav {
-  /*        .navbar-toggler-icon {
-      width: 100%;
-      float: left;
-      height: 2px;
-      background-color: #fff;
-      margin-bottom: 5px;
-  } */
   /***naslov***/
+  /***zaglavlje***/
 }
 header nav .nav-link {
   background: transparent;
@@ -83,10 +86,10 @@ header nav #navbarNav li a {
 header nav #navbarNav li a:hover {
   color: #ee666c;
 }
-header nav .naslov {
+header .naslov {
   padding-top: 60px;
 }
-header nav .naslov h1 {
+header .naslov h1 {
   background: #ee666c;
   opacity: 0.8;
   padding: 10px 20px;
@@ -286,13 +289,16 @@ footer .col-md-5 i {
 }
 
 /***blog***/
-.blog {
+.blog,
+.education {
   padding: 40px;
 }
-.blog .card {
+.blog .card,
+.education .card {
   border: none;
 }
-.blog .card h5 {
+.blog .card h5,
+.education .card h5 {
   color: #25235b;
   font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
