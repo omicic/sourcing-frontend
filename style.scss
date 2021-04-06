@@ -76,10 +76,12 @@ header {
 
     nav {
         .nav-link {
+            background: transparent;
             color: $white;
             margin-left: 20px;
             text-transform: uppercase;
             transition: $transition;
+
 
             &:hover {
                 color: $secondaryColor;
@@ -87,7 +89,7 @@ header {
         }
 
         #navbarNav {
-            background: $black;
+            background: transparent;
             text-align: right;
             margin: auto;
 
@@ -99,21 +101,27 @@ header {
                 }
             }
 
-
-
         }
-    }
 
-    /***naslov***/
-    .naslov {
+        /*        .navbar-toggler-icon {
+            width: 100%;
+            float: left;
+            height: 2px;
+            background-color: #fff;
+            margin-bottom: 5px;
+        } */
 
-        padding-top: 60px;
+        /***naslov***/
+        .naslov {
 
-        h1 {
-            background: $secondaryColor;
-            opacity: .8;
-            padding: 10px 20px;
-            display: inline;
+            padding-top: 60px;
+
+            h1 {
+                background: $secondaryColor;
+                opacity: .8;
+                padding: 10px 20px;
+                display: inline;
+            }
         }
     }
 
@@ -148,6 +156,7 @@ header {
             }
         }
     }
+
 }
 
 /***about***/

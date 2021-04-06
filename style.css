@@ -50,10 +50,20 @@ hr {
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/header3.jpg);
   height: 50vh;
-  /***naslov***/
   /***zaglavlje***/
 }
+header nav {
+  /*        .navbar-toggler-icon {
+      width: 100%;
+      float: left;
+      height: 2px;
+      background-color: #fff;
+      margin-bottom: 5px;
+  } */
+  /***naslov***/
+}
 header nav .nav-link {
+  background: transparent;
   color: #fff;
   margin-left: 20px;
   text-transform: uppercase;
@@ -63,7 +73,7 @@ header nav .nav-link:hover {
   color: #ee666c;
 }
 header nav #navbarNav {
-  background: #212529;
+  background: transparent;
   text-align: right;
   margin: auto;
 }
@@ -73,10 +83,10 @@ header nav #navbarNav li a {
 header nav #navbarNav li a:hover {
   color: #ee666c;
 }
-header .naslov {
+header nav .naslov {
   padding-top: 60px;
 }
-header .naslov h1 {
+header nav .naslov h1 {
   background: #ee666c;
   opacity: 0.8;
   padding: 10px 20px;
