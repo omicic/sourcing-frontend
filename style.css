@@ -301,4 +301,14 @@ footer .col-md-5 i {
 .education .card h5 {
   color: #25235b;
   font-weight: 500;
+}
+
+/***services***/
+.services .col-md-5 {
+  justify-content: space-around;
+}
+.services .col-md-5 h1 {
+  transform: rotate(-90deg);
+  font-size: 4rem;
+  top: 100px;
 }/*# sourceMappingURL=style.css.map */

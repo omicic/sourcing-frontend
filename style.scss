@@ -381,3 +381,21 @@ footer {
         }
     }
 }
+
+/***services***/
+.services {
+
+    .col-md-5 {
+        justify-content: space-around;
+
+        h1 {
+
+            transform: rotate(-90deg);
+            font-size: 4rem;
+            top: 100px;
+        }
+
+        p {}
+    }
+
+}
