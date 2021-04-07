@@ -40,3 +40,8 @@ image.addEventListener('mouseout', function(){
         }
     }
 });
+
+
+$(".navbar-toggler").click(function () {
+    document.getElementById('#program').style.cssText = 'padding-top:200px;';
+    });

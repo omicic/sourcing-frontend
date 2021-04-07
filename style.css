@@ -63,7 +63,6 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/header3.jpg);
   height: 50vh;
   /***naslov***/
-  /***zaglavlje***/
 }
 header nav .nav-link {
   background: transparent;
@@ -95,26 +94,29 @@ header .naslov h1 {
   padding: 10px 20px;
   display: inline;
 }
-header #zaglavlje {
+
+/***zaglavlje***/
+#zaglavlje {
   background: #25235b;
-  height: 35vh;
+  height: 40vh;
+  width: 50%;
   position: relative;
-  top: 200px;
+  top: -50px;
 }
-header #zaglavlje .row {
+#zaglavlje .row {
   position: relative;
   top: -100px;
 }
-header #zaglavlje .row h1 {
+#zaglavlje .row h1 {
   font-size: 5rem;
   font-weight: 800;
   text-transform: uppercase;
   text-shadow: 0px 0px 15px #ee666c;
 }
-header #zaglavlje .row p {
+#zaglavlje .row p {
   padding: 10px 0 20px 0;
 }
-header #zaglavlje .row .element {
+#zaglavlje .row .element {
   text-transform: uppercase;
   color: #ee666c;
   font-weight: 600;
@@ -124,14 +126,9 @@ header #zaglavlje .row .element {
 
 /***about***/
 #program {
-  margin: 150px auto;
+  padding-top: 0px;
 }
 #program .prvi article, #program .treci article, #program .drugi article {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
   padding: 35px;
   margin: 0px 15px 30px 0px;
 }
@@ -191,6 +188,38 @@ header #zaglavlje .row .element {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  header {
+    height: 50vh;
+  }
+
+  #zaglavlje {
+    height: 20vh;
+    top: -100px;
+    width: 60%;
+  }
+  #zaglavlje .row {
+    top: -90px;
+  }
+  #zaglavlje .row h1 {
+    font-size: 2rem;
+  }
+  #zaglavlje .row p {
+    padding: 10px 0 10px 0;
+    font-size: 0.8rem;
+  }
+  #zaglavlje .row .element {
+    font-size: 1.1rem;
+  }
+
+  #about .row:nth-child(2) h2 {
+    padding-right: 70px;
+    transform: none !important;
+    font-size: 3rem !important;
+    font-weight: 700;
+    letter-spacing: 1rem;
+  }
+}
 #about {
   background: url(img/bg3.jpg);
   background-position: center;
@@ -305,10 +334,26 @@ footer .col-md-5 i {
 
 /***services***/
 .services .col-md-5 {
-  justify-content: space-around;
+  margin: auto 0;
 }
-.services .col-md-5 h1 {
+.services .col-md-5 div:nth-child(1) {
+  flex: 0 0 50%;
+}
+.services .col-md-5 div:nth-child(1) h1 {
   transform: rotate(-90deg);
-  font-size: 4rem;
-  top: 100px;
+  font-size: 6rem;
+}
+.services .col-md-5 div:nth-child(2) {
+  flex: 0 0 50%;
+  padding: 100px 10px;
+}
+.services .col-md-7 {
+  padding: 50px 0;
+}
+.services .col-md-7 article h4 {
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.services .col-md-7 article hr {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
